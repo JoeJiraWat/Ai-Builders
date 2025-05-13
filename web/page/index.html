@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/web/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="https://ai-builders.github.io/showcase/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navigation-bar -->
+    <nav class="nav w-[100%] h-[100px] bg-[#000000] fixed top-0 left-0 right-0 z-10">
+        <div class="main-container">
+            <div class="menu flex justify-evenly font-300 text-[26px] pt-[30px]">
+                <a href="#home" class="text-[#ffffff]">Home</a>
+                <a href="#about" class="text-[#ffffff]">About</a>
+                <a href="#" class="text-[#ffffff]">Contact</a>
+            </div>
+        </div>
+    </nav>
+<section id="home">
+    <center>
+        <div class="flex justify-center items-center">
+            <div class="container-mainContent">
+                <div class="container">
+                    <div class="animated-title">
+                        <h2 class="text-[50px] pt-[200px] wave-text">
+                            <span style="--i:1">L</span>
+                            <span style="--i:2">e</span>
+                            <span style="--i:3">t</span>
+                            <span style="--i:4">'</span>
+                            <span style="--i:5">s</span>
+                            <span style="--i:6"> </span>
+                            <span style="--i:7">S</span>
+                            <span style="--i:8">t</span>
+                            <span style="--i:9">a</span>
+                            <span style="--i:10">r</span>
+                            <span style="--i:11">t</span>
+                            <span style="--i:12"> </span>
+                            <span style="--i:13">y</span>
+                            <span style="--i:14">o</span>
+                            <span style="--i:15">u</span>
+                            <span style="--i:16">r</span>
+                            <span style="--i:17"> </span>
+                            <span style="--i:18">s</span>
+                            <span style="--i:19">i</span>
+                            <span style="--i:20">n</span>
+                            <span style="--i:21">g</span>
+                            <span style="--i:22"> </span>
+                            <span style="--i:23">s</span>
+                            <span style="--i:24">o</span>
+                            <span style="--i:25">n</span>
+                            <span style="--i:26">g</span>
+                        </h2>
+                        <div class="wave-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-4 mt-[200px]">
+                        <div class="button-voice w-[150px] h-[150px] rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-270%">
+                            <i class="fa-regular fa-microphone text-[50px] pt-[50px]"></i>
+                        </div>
+                        <input type="file" id="audio-upload" accept=".wav" class="hidden">
+                    </div>
+                    <div class="container-prompt mt-[100px] relative">
+                        <input type="text" 
+                               placeholder="Type your message here..." 
+                               class="w-[100%] h-[60px] bg-[#ffffff] rounded-lg border border-gray-300 pl-4 pr-24 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm">
+                        <div class="absolute right-3 top-1/2 transform -translate-y-1/2 flex gap-2">
+                            <label for="prompt-audio-upload" class="text-gray-500 hover:text-blue-500 cursor-pointer">
+                                <i class="fas fa-file-audio text-xl"></i>
+                            </label>
+                            <button class="text-gray-500 hover:text-blue-500">
+                                <i class="fas fa-paper-plane text-xl"></i>
+                            </button>
+                        </div>
+                        <input type="file" id="prompt-audio-upload" accept=".wav" class="hidden">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </center>
+</section>
+<section id="about">
+    <div class="about-content h-[1200px] w-[100%] bg-[#F2F1F1]">
+        <div class="main-content">
+            <div class="topic pt-[100px]">
+                <p class="text-[40px] pl-[160px]">About Project</p>
+                <div class="line w-[400px] h-[10px] bg-[#0066FF]">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    scroll-behavior: smooth;
+}
+#home{
+    margin-top: 100px;
+    height: 1000px;
+}
+.container-prompt{
+    border-radius: 20px;
+    width: 110vh;
+}
+
+.wave-text {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.wave-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: waveDots 1.5s ease-in-out infinite;
+}
+
+.dot:nth-child(1) { background-color: #FF6B6B; animation-delay: 0s; }
+.dot:nth-child(2) { background-color: #4ECDC4; animation-delay: 0.1s; }
+.dot:nth-child(3) { background-color: #45B7D1; animation-delay: 0.2s; }
+.dot:nth-child(4) { background-color: #96CEB4; animation-delay: 0.3s; }
+.dot:nth-child(5) { background-color: #FFEEAD; animation-delay: 0.4s; }
+.dot:nth-child(6) { background-color: #D4A5A5; animation-delay: 0.5s; }
+.dot:nth-child(7) { background-color: #9B59B6; animation-delay: 0.6s; }
+.dot:nth-child(8) { background-color: #3498DB; animation-delay: 0.7s; }
+.dot:nth-child(9) { background-color: #2ECC71; animation-delay: 0.8s; }
+.dot:nth-child(10) { background-color: #F1C40F; animation-delay: 0.9s; }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes waveDots {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
